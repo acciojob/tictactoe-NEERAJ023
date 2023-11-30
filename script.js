@@ -31,11 +31,11 @@ let currentPlayer;
 
     function cellClick(index) {
         if (board[index] === '' && !checkWinner()) {
-            board[index] = currentPlayer === 'player-1' ? 'X' : 'O';
+            board[index] = currentPlayer === 'player-1' ? 'x' : 'O';
             document.getElementById((index + 1).toString()).textContent = board[index];
             
             if (checkWinner()) {
-                document.getElementById('message').textContent = `${players[currentPlayer]} congratulations you won!`;
+                document.getElementById('message').textContent = `${players[currentPlayer]}, congratulations you won!`;
             } else {
                 currentPlayer = currentPlayer === 'player-1' ? 'player-2' : 'player-1';
                 updateMessage();
