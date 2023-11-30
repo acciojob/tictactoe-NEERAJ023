@@ -6,8 +6,8 @@ let currentPlayer;
     };
 
     function startGame() {
-        players['player-1'] = document.getElementById('player-1').value;
-        players['player-2'] = document.getElementById('player-2').value;
+        players['player-1'] = document.getElementById('player1').value;
+        players['player-2'] = document.getElementById('player2').value;
 
         document.getElementById('inputPage').style.display = 'none';
         document.getElementById('boardPage').style.display = 'block';
