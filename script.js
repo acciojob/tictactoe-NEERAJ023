@@ -31,7 +31,7 @@ let currentPlayer;
 
     function cellClick(index) {
         if (board[index] === '' && !checkWinner()) {
-            board[index] = currentPlayer === 'player-1' ? 'x' : 'O';
+            board[index] = currentPlayer === 'player-1' ? 'X' : 'O';
             document.getElementById((index + 1).toString()).textContent = board[index];
             
             if (checkWinner()) {
